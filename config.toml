@@ -1,4 +1,16 @@
-baseURL = "http://example.org/"
+baseURL = "http://tkasper.de/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "Tobias"
 theme = "tanka"
+
+[params]
+  sitename = "Tobias"
+
+[[menu.primary]]
+    name = "Home"
+    url = "/"
+    weight = 1
+[[menu.primary]]
+    name = "About"
+    url = "/about/"
+    weight = 2
