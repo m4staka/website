@@ -1,0 +1,19 @@
+baseURL: "https://<username>.github.io/"   # lokal ok; CI überschreibt baseURL per --baseURL
+languageCode: "en-us"
+title: "Tobias"
+pagination:
+  pagerSize: 10
+
+menus:
+  main:
+    - name: Blog
+      pageRef: /
+      weight: 10
+    - name: About
+      pageRef: /about
+      weight: 20
+
+params:
+  social:
+    x: "https://x.com/tbskspr"
+    github: "https://github.com/m4staka"

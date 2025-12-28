@@ -1,0 +1,8 @@
+{{- $key := .Get "key" | default (.Get 0) -}}
+{{- $label := .Get "label" | default (.Get 1) | default (title $key) -}}
+{{- with $key -}}
+  {{- with index site.Params.social . -}}
+<a href="{{ . }}" rel="me noopener" target="_blank">{{ $label }}</a>
+  {{- end -}}
+{{- end -}}
+

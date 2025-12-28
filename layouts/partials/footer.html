@@ -1,0 +1,15 @@
+<footer class="footer">
+  <div class="container footer-inner">
+    <span class="muted">© {{ now.Year }} {{ site.Title }}</span>
+
+    <div class="social">
+      {{ with site.Params.social.x }}
+        <a href="{{ . }}" rel="me noopener" target="_blank">X</a>
+      {{ end }}
+      {{ with site.Params.social.github }}
+        <a href="{{ . }}" rel="me noopener" target="_blank">GitHub</a>
+      {{ end }}
+    </div>
+  </div>
+</footer>
+

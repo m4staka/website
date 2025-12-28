@@ -1,0 +1,16 @@
+<header class="header">
+  <div class="container header-inner">
+    <a class="brand" href="{{ "/" | relURL }}">{{ site.Title }}</a>
+
+    <nav class="nav">
+      {{ with site.Menus.main }}
+        {{ range . }}
+          <a class="nav-link" href="{{ .URL }}">{{ .Name }}</a>
+        {{ end }}
+      {{ else }}
+        <a class="nav-link" href="{{ "/" | relURL }}">Blog</a>
+        <a class="nav-link" href="{{ "/about/" | relURL }}">About</a>
+      {{ end }}
+    </nav>
+  </div>
+</header>
