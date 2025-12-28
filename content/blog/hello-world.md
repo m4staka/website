@@ -8,8 +8,6 @@ tags: ["first-post", "hello"]
 
 <!--more-->
 
-# Hello World
-
 This is my first blog post. I'm excited to start sharing my thoughts and projects here.
 
 Looking forward to writing more!
