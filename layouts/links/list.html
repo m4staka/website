@@ -1,0 +1,29 @@
+{{ define "main" }}
+  <h1 class="page-title">{{ .Title }}</h1>
+
+  {{ with .Content }}
+    <div class="page-description">{{ . }}</div>
+  {{ end }}
+
+  {{ $p := .Paginate (.Pages.ByDate.Reverse) }}
+  <ul class="link-list">
+    {{ range $p.Pages }}
+      <li class="link-item">
+        <span class="link-date">
+          <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "02.01.2006" }}</time>
+        </span>
+        <a href="{{ .Params.link_url }}" target="_blank" rel="noopener noreferrer" class="link-title">
+          {{ .Title }}
+        </a>
+        {{ with .Params.link_domain }}
+          <span class="link-domain">({{ . }})</span>
+        {{ end }}
+      </li>
+    {{ end }}
+  </ul>
+
+  <nav class="pager">
+    {{ with $p.Prev }}<a href="{{ .URL }}">← Neuere</a>{{ end }}
+    {{ with $p.Next }}<a href="{{ .URL }}">Ältere →</a>{{ end }}
+  </nav>
+{{ end }}
