@@ -9,6 +9,9 @@ menus:
     - name: Blog
       pageRef: /
       weight: 10
+    - name: Links
+      pageRef: /links
+      weight: 15
     - name: About
       pageRef: /about
       weight: 20
