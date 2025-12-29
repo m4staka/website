@@ -32,7 +32,9 @@ DOMAIN=$(echo "$URL" | sed -E 's|^https?://([^/]+).*|\1|')
 
 # Fetch page title from HTML
 echo "Fetching page title..."
-PAGE_TITLE=$(curl -sL "$URL" | grep -oPm1 '(?<=<title>)[^<]+' | sed 's/&amp;/\&/g; s/&lt;/</g; s/&gt;/>/g; s/&quot;/"/g; s/&#39;/'"'"'/g')
+# Store HTML content first to avoid SIGPIPE issues with curl | grep -m1
+HTML_CONTENT=$(curl -sL "$URL")
+PAGE_TITLE=$(echo "$HTML_CONTENT" | grep -oPm1 '(?<=<title>)[^<]+' | sed 's/&amp;/\&/g; s/&lt;/</g; s/&gt;/>/g; s/&quot;/"/g; s/&#39;/'"'"'/g')
 
 if [ -z "$PAGE_TITLE" ]; then
     echo -e "${RED}Error: Could not fetch page title from URL${NC}"
