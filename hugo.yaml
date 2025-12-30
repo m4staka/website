@@ -2,7 +2,7 @@ baseURL: "https://<username>.github.io/"   # lokal ok; CI überschreibt baseURL 
 languageCode: "en-us"
 title: "Tobias"
 pagination:
-  pagerSize: 10
+  pagerSize: 25
 
 menus:
   main:
