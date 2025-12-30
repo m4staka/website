@@ -1,6 +1,8 @@
 <footer class="footer">
   <div class="container footer-inner">
-    <span class="muted">© {{ now.Year }} {{ site.Title }}</span>
+    <span class="muted">© {{ now.Year }}</span>
+
+    <a href="{{ "impressum/" | relURL }}">Impressum</a>
 
     <div class="social">
       {{ with site.Params.social.x }}
@@ -12,4 +14,3 @@
     </div>
   </div>
 </footer>
-

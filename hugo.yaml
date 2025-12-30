@@ -1,6 +1,6 @@
 baseURL: "https://<username>.github.io/"   # lokal ok; CI überschreibt baseURL per --baseURL
 languageCode: "en-us"
-title: "Tobias"
+title: "tkasper / notes"
 pagination:
   pagerSize: 25
 
@@ -18,5 +18,6 @@ menus:
 
 params:
   social:
+    mail: "mailto:hallo@tkasper.de"
     x: "https://x.com/tbskspr"
     github: "https://github.com/m4staka"
