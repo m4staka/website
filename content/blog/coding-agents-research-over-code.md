@@ -1,7 +1,7 @@
 ---
 title: "Coding Agents: Why Research Matters More Than Code"
 date: 2026-01-08
-draft: true
+draft: false
 description: "A three-phase methodology for coding agents where the highest leverage lies in research, not implementation"
 tags: ["ai", "coding-agents", "llm", "software-development"]
 ---
