@@ -1,10 +1,13 @@
 ---
 title: "2026: Die Signale verdichten sich"
 date: 2026-01-11
+lastmod: 2026-01-12
 draft: false
 description: "Es ist nicht mehr die Frage ob AI den meisten Code schreiben wird. Nur noch wie schnell."
 tags: ["ai", "coding-agents", "llm"]
 ---
+
+*Update 12.01.: Armin Ronacher hinzugefügt.*
 
 Simon Willison in seinen [LLM Predictions für 2026](https://simonwillison.net/2026/Jan/8/llm-predictions-for-2026/):
 
