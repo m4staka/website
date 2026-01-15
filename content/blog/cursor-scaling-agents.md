@@ -1,5 +1,5 @@
 ---
-title: "Cursor skaliert Coding-Agents – aber nur für bekannte Probleme"
+title: "Cursor skaliert Coding-Agents"
 date: 2026-01-15T22:00:00+01:00
 draft: false
 description: "Cursor experimentiert mit hunderten parallelen Coding-Agents. Die Ergebnisse sind beeindruckend – aber alle Beispiele haben klare Erfolgskriterien."
@@ -22,7 +22,7 @@ Cursor hat wochenlang mit hunderten parallelen Coding-Agents experimentiert, die
 
 ## Mein Take
 
-Das sind alles Projekte mit klaren Erfolgskriterien – entweder gibt es eine Spec (Browser, LSP), eine Test-Suite, oder bekanntes Verhalten zum Nachbauen. Coding-Agents sind gut darin, "implement the spec" zu lösen. Was ich nicht sehe: wie gut funktioniert das für ein neuartiges Produkt ohne Spec?
+Das sind alles Projekte mit klaren Erfolgskriterien – entweder gibt es eine Spec (Browser, LSP), eine Test-Suite, oder bekanntes Verhalten zum Nachbauen. Coding-Agents sind gut darin, "implement the spec" zu lösen. Was ich nicht sehe: wie gut funktioniert das für ein neuartiges Produkt?
 
 ## Interessantes Zitat
 
