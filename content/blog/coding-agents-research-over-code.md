@@ -8,6 +8,8 @@ tags: ["ai", "coding-agents", "llm", "software-development"]
 
 I watched a video about an implementation methodology for coding agents that I found fascinating.
 
+{{< youtube 42AzKZRNhsk >}}
+
 <!--more-->
 
 ## The Three Phases
@@ -34,4 +36,6 @@ The big advantage of sub-agents: They have their own context. You give them a ta
 
 ---
 
-*Video: [YouTube](https://youtu.be/42AzKZRNhsk)*
+**Resources:**
+- [Slides (GitHub)](https://github.com/humanlayer/advanced-context-engineering-for-coding-agents/blob/main/ace-fca.md)
+- [Video (YouTube)](https://youtu.be/42AzKZRNhsk)
