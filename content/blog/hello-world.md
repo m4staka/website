@@ -6,8 +6,6 @@ description: "My first blog post"
 tags: ["first-post", "hello"]
 ---
 
-<!--more-->
-
 This is my first blog post. I'm excited to start sharing my thoughts and projects here.
 
 Looking forward to writing more!

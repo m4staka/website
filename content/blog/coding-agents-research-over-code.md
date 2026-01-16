@@ -1,20 +1,20 @@
 ---
-title: "Coding Agents: Why Research Matters More Than Code"
+title: "Research - Plan - Implement"
 date: 2026-01-08
 draft: false
 description: "A three-phase methodology for coding agents where the highest leverage lies in research, not implementation"
+summary: "A three-phase workflow for coding agents"
 tags: ["ai", "coding-agents", "llm", "software-development"]
 ---
 
-I watched a video about an implementation methodology for coding agents that I found fascinating.
+I found this methodology fascinating:
 
 {{< youtube 42AzKZRNhsk >}}
 
-<!--more-->
 
 ## The Three Phases
 
-The workflow consists of three phases, each in a separate chat:
+The workflow consists of three phases, each in a separate session/chat:
 
 1. **Research:** Search the codebase, gather context about the problem, document everything in detail
 2. **Plan:** Generate an implementation plan
@@ -28,7 +28,7 @@ The underlying concept: Every model has a limited context window. The more of it
 
 What surprised me: The highest leverage is in the research phase. Then comes the plan. The code itself? They sometimes don't even look at it anymore.
 
-The review process reflects this: A colleague reviews research and plan—but usually not the code.
+The review process reflects this: A colleague reviews research and plan — but usually not the code.
 
 ## Sub-Agents and Their Advantage
 
