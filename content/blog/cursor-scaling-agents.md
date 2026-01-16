@@ -23,6 +23,12 @@ Cursor experimented for weeks with hundreds of parallel coding agents running au
 
 These are all projects with clear success criteria—either there's a spec (Browser, LSP), a test suite, or known behavior to replicate. Coding agents are good at solving "implement the spec." What I don't see: how well does this work for a novel product?
 
+## Interesting Quote
+
+> "The right amount of structure is somewhere in the middle. Too little structure and agents conflict, duplicate work, and drift. Too much structure creates fragility."
+
+Funny enough, I read the same thing in Sutherland's Scrum handbook—about human teams. The challenges in agent coordination are apparently the same as with humans.
+
 ## Update: Implied Success
 
 The browser from the example [doesn't build and never did](https://embedding-shapes.github.io/cursor-implied-success-without-evidence/). Interesting, because the blog post never explicitly claims it works—but strongly implies it:
@@ -30,9 +36,3 @@ The browser from the example [doesn't build and never did](https://embedding-sha
 > "Cursor never says 'this browser is production-ready', but they do frame it as 'building a web browser from scratch' and 'meaningful progress' and then use a screenshot and 'extremely difficult' language, wanting to give the impression that this experiment actually was a success."
 
 Classic marketing: impressive numbers (1M+ LoC!) and screenshots, but no verifiable results.
-
-## Interesting Quote
-
-> "The right amount of structure is somewhere in the middle. Too little structure and agents conflict, duplicate work, and drift. Too much structure creates fragility."
-
-Funny enough, I read the same thing in Sutherland's Scrum handbook—about human teams. The challenges in agent coordination are apparently the same as with humans.
