@@ -3,7 +3,7 @@ title: "Hello World"
 date: 2025-12-28
 draft: false
 description: "My first blog post"
-summary: ""
+summary: " "
 tags: ["first-post", "hello"]
 ---
 
