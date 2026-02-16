@@ -2,8 +2,11 @@
 set -euo pipefail
 
 # post-link.sh - Quick link posting tool for Hugo
-# Usage: ./post-link.sh [--no-git] [--title TITLE] <URL> [DATE]
-# Example: ./post-link.sh --no-git "https://example.com" "2025-12-25"
+# Usage: ./post-link.sh [--no-git] [--title TITLE] <URL> [DATE] [TITLE...]
+# Examples:
+#   ./post-link.sh --no-git "https://example.com" "2025-12-25"
+#   ./post-link.sh "https://example.com" "My custom title"
+#   ./post-link.sh "https://example.com" "2025-12-25" "My custom title"
 
 # Colors for output
 GREEN='\033[0;32m'
@@ -45,13 +48,33 @@ done
 # Check arguments
 if [ $# -lt 1 ]; then
     echo -e "${RED}Error: URL required${NC}"
-    echo "Usage: $0 [--no-git] <URL> [DATE]"
-    echo "Example: $0 --no-git 'https://example.com' '2025-12-25'"
+    echo "Usage: $0 [--no-git] [--title TITLE] <URL> [DATE] [TITLE...]"
+    echo "Examples:"
+    echo "  $0 --no-git 'https://example.com' '2025-12-25'"
+    echo "  $0 'https://example.com' 'My custom title'"
+    echo "  $0 'https://example.com' '2025-12-25' 'My custom title'"
     exit 1
 fi
 
 URL="$1"
-DATE="${2:-$(date +%Y-%m-%d)}" # Use provided date or today
+shift
+
+DATE="$(date +%Y-%m-%d)" # Default: today
+
+# Optional positional date (YYYY-MM-DD)
+if [ $# -gt 0 ] && [[ "${1:-}" =~ ^[0-9]{4}-[0-9]{2}-[0-9]{2}$ ]]; then
+    DATE="$1"
+    shift
+fi
+
+# Optional positional title (remaining args). This is an alternative to --title.
+if [ $# -gt 0 ]; then
+    if [ -n "$CUSTOM_TITLE" ]; then
+        echo -e "${RED}Error: Title provided both via --title and positional argument(s)${NC}"
+        exit 1
+    fi
+    CUSTOM_TITLE="$*"
+fi
 
 # Validate URL format
 if [[ ! "$URL" =~ ^https?:// ]]; then
